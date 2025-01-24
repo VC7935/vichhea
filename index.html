@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Script/bootstrap.min.css'>
+    <script src='script/jquery-3.2.1.slim.min.js'></script>
+    <script src='script/popper.min.js'></script>
+    <script src='script/bootstrap.min.js'></script>
+</head>
+<body>
+    <style>
+    .hero {
+        background-size: cover;
+        background-position: center;
+        color: goldenrod;
+        padding: 100px 0;
+    }
+    .menu-item {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 50px 0;
+        text-align: center; 
+    }
+    .menu-item img {
+        width: 100px; 
+        height: 100px; 
+        object-fit: contain;
+        border-radius: 50%; 
+        margin-bottom: 20px; 
+        transition: transform 0.5s ease; 
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .menu-item:hover {
+        background-color: #e9ecef;
+        transition: background-color 2s ease;
+        transform: translateY(-5px);
+        transform: scale(1.05);
+        cursor: pointer;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+    .footer {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 50px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        position: sticky;
+    }
+</style>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container-fluid">
+    <a class="navbar-brand" href="#">Cafe_Group2</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="hero text-center">
+<h1>Welcome to Cafe_Group2</h1>
+<p>Where every sip feels like home</p>
+</section>
+<!-- Menu Section -->
+<section id="menu" class="container col-lg-12">
+    <h2 class="text-center">Our Menu</h2>
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="menu-item">
+                <img src="Image/1.png" width="100" alt="">
+                <h3>Cappucino</h3>
+                <div class="size-dropdown mb-2">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size1" value="1.00">
+                        <label class="form-check-label">Small ($1.00)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size1" value="1.25">
+                        <label class="form-check-label">Medium ($1.25)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size1" value="2.00">
+                        <label class="form-check-label">Large ($2.00)</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="menu-item">
+                <img src="Image/2.png" width="100" alt="">
+                <h3>Americano</h3>
+                <div class="size-dropdown mb-2">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size1" value="1.00">
+                        <label class="form-check-label">Small ($1.00)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size1" value="1.25">
+                        <label class="form-check-label">Medium ($1.25)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size1" value="2.00">
+                        <label class="form-check-label">Large ($2.00)</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="menu-item">
+                <img src="Image/3.jpg" width="100" alt="">
+                <h3>Espresso</h3>
+                <div class="size-dropdown mb-2">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size1" value="1.00">
+                        <label class="form-check-label">Small ($1.00)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size1" value="1.25">
+                        <label class="form-check-label">Medium ($1.25)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size1" value="2.00">
+                        <label class="form-check-label">Large ($2.00)</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="menu-item">
+                <img src="Image/4.png" width="100" alt="">
+                <h3>Latte</h3>
+                <div class="size-dropdown mb-2">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size1" value="1.00">
+                        <label class="form-check-label">Small ($1.00)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size1" value="1.25">
+                        <label class="form-check-label">Medium ($1.25)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size1" value="2.00">
+                        <label class="form-check-label">Large ($2.00)</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="container col-lg-12">
+    <h2 class="text-center">About Us</h2>
+    <p class="text-center">"At [Cafe_Group2], we are your neighborhood haven for freshly brewed coffee, delectable pastries, and a warm, inviting atmosphere. </p>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="container col-lg-12">
+    <h2 class="text-center">Contact Us</h2>
+    <p class="text-center">Phone: (855) 123-456-789<br>Email: <a href="https://web.facebook.com/Chea1330">info@vicheakefa.com</a></p>
+    <!-- Footer -->
+    <footer class="footer text-center">
+    <p>&copy; 2025 Cafe Shop | All Rights Reserved</p>
+    </footer>
+    </body>
+    </html>
